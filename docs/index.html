@@ -1,84 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
     
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"
-        />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="./css/style.css" />
-        <link rel="icon" href="./img/icon.png" />
-        <title>Basic - Bootstrap 5 with Gulp 4</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <title>Headway Productions by Tim Harris - Professionel video- og lydproduktion</title>
+        <link
+        href="css/style.css" rel="stylesheet" type="text/css" />
     </head>
     
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <div class="container-fluid"> <a class="navbar-brand" href="./">Basic 5</a>
-
-                <button class="navbar-toggler"
-                type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
-
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./">Home</a>
-
-                        </li>
-                        <li class="nav-item"> <a class="nav-link" href="./about.html">About</a>
-
-                        </li>
-                        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-            </a>
-
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a>
-
-                                </li>
-                                <li><a class="dropdown-item" href="#">Another action</a>
-
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a>
-
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+        <header class="video-header">
+            <!-- BACGKROUND VIDEO HEADER SECTION-->
+            <video id="bgVideo" class="video-background" autoplay muted loop>
+                <source src="img/headerVideo.mp4" type="video/mp4">Din browser understøtter ikke videoafspilning.</video>
+            <div class="video-overlay"></div>
+            <!-- HERO BOX -->
+            <div class="container hero-content">
+                <div class="row justify-content-center">
+                    <div class="text-center hero-box">
+                         <h1 class="display-1 text-white">Pro video og lyd</h1>
+                        <p class="lead text-white">Mere en 30 års efaring med optagelser, mixing, mastering, koncertafvikling
+                            og videoproduktioner</p>
+                    </div>
                 </div>
             </div>
-        </nav>
-        <div class="container mt-5 mb-5">
-             <h1 class="display-3">Boilerplate Bootstrap 5+  with Gulp 4 </h1>
+            <!-- MAIN NAVIGATION-->
+            <!-- MAIN NAV -->
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-3 border-bottom border-2 border-warning">
+                <div class="container"> <a class="navbar-brand" href="/">
 
-            <p class="lead">Basic5 is a Bootstrap 5+ boilerplate with Gulp4, cross-env, Sass, sourcemaps,
-                concat, CSS & HTML minification, uglify, image optimization, template partials,
-                BrowserSync.</p>
-            <p><a target="_blank" class="btn btn-primary" href="https://bootstrapstarter.com/template-basic5-bootstrap5-html/"
-                role="button">Documentation &raquo;</a>
-            </p>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579032365451-d20e00c0ed23?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+            <picture>
+
+                <source media="(max-width: 991px)" width="240" srcset="img/Headway-logo-stacked.png" />
+
+                <source media="(min-width: 992px)" width="460" srcset="img/Headway-logo-horizontal.png" />
+
+                <img src="img/Headway-logo-horizontal.png" alt="Headway Productions logo" />
+
+            </picture>
+
+        </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                        <div class="animated-icon"><span></span><span></span><span></span>
+
+                        </div>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Hjem</a>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Om Os</a>
+                            </li>
+                            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                    Services
+
+                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Service 1</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Service 2</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Service 3</a>
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579032365437-9f9d275b0db0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+            </nav>
+        </header>
+        <!-- CONTENT SECTION-->
+        <main>
+            <section class="container py-5">
+                <div class="row gx-md-5">
+                    <div class="col-md-6">
+                         <h1 class="">The main heading</h1>
+                        <!--<h2 class="">Sub heading - longer text </h2>-->
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum cumque sunt
+                            vero esse nostrum repudiandae, adipisci quas quae distinctio dignissimos
+                            aspernatur, nam quos alias odit quis velit debitis minima quaerat?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum cumque sunt
+                            vero esse nostrum repudiandae, adipisci quas quae distinctio dignissimos
+                            aspernatur, nam quos alias odit quis velit debitis minima quaerat?</p>
+                         <h2>Sub heading 2</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum cumque sunt
+                            vero esse nostrum repudiandae, adipisci quas quae distinctio dignissimos
+                            aspernatur, nam quos alias odit quis velit debitis minima quaerat?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum cumque sunt
+                            vero esse nostrum repudiandae, adipisci quas quae distinctio dignissimos
+                            aspernatur, nam quos alias odit quis velit debitis minima quaerat?</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/fujiphilm-WI7VoMvSMP8-unsplash.jpg" class="framed img-fluid"
+                        alt="Tilfældigt billede">
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579033060982-1bb5b083f4fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                </div>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer class=" border-top">
+            <div class="container" style="margin-top:-1px;">
+                <p class="float-end"><span id="copyright">hello</span> | <a class="text-success text-muted" href="http://www.stagemusicconcept.com"
+                    target="_blank">Webdesign by SMC</a>
+
+                </p>
             </div>
-        </div>
-        <footer class="footer container text-center">
-            <p>&copy; Bootstrap Basic5 Starter with Gulp</p>
         </footer>
-        <script src="./js/all.js"></script>
+        <script>
+            const startDate = "2025";
+              const currentYear = new Date().getFullYear().toString();
+              const dateString = startDate === currentYear ? `© copyright ${startDate}` : `© ${startDate} - ${currentYear}`;
+              document.getElementById("copyright").innerText = dateString;
+        </script>
+        <!-- SCRIPTS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) { // Juster scroll-positionen efter behov
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+              });
+        
+              document.addEventListener('DOMContentLoaded', function() {
+                  var video = document.getElementById('bgVideo');
+                  video.playbackRate = 0.5;
+              });
+        
+              document.addEventListener('DOMContentLoaded', function() {
+                  const navbarToggler = document.querySelector('.navbar-toggler');
+                  const animatedIcon = document.querySelector('.animated-icon');
+        
+                  navbarToggler.addEventListener('click', function() {
+                      animatedIcon.classList.toggle('open');
+                  });
+              });
+        </script>
     </body>
 
 </html>

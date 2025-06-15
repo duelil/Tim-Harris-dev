@@ -1,0 +1,33 @@
+.hero-content {
+  position: relative;
+  z-index: 10; /* Sørg for at hero-indholdet er over videoen og overlayet */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include media-breakpoint-down(lg){
+    margin-top: 40px;
+  }
+}
+
+.hero-box {
+  clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%); /* Skrå ender */
+  background-color: rgba(242,166,26, .8); /* Baggrundsfarve for hero-boksen */
+  padding: 2rem 6rem; /* Tilføj lidt padding */
+  max-width: 90%;
+  filter: blur(10px); /* Start med et sløret udseende */
+  animation: unblur 2s ease-in-out forwards; /* Anvend animationen */
+}
+
+@keyframes unblur {
+  to {
+      filter: blur(0); /* Gå gradvist til skarpt */
+  }
+}
+
+img.framed {
+  box-shadow:
+    -38px -38px 0 -31px orange,
+    48px 48px 0 -42px orange;
+    margin-top:20px;
+}

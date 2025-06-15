@@ -1,6 +1,13 @@
-<footer class="footer container text-center">
-    <p>&copy; Bootstrap Basic5 Starter with Gulp</p>
+
+<!-- FOOTER -->
+<footer class=" border-top">
+  <div class="container" style="margin-top:-1px;">
+    <p class="float-end"><span id="copyright">hello</span> | <a class="text-success text-muted" href="http://www.stagemusicconcept.com" target="_blank">Webdesign by SMC</a></p>
+  </div>
 </footer>
-<script src="./js/all.js"></script>
-</body>
-</html>
+<script>
+  const startDate = "2025";
+  const currentYear = new Date().getFullYear().toString();
+  const dateString = startDate === currentYear ? `© copyright ${startDate}` : `© ${startDate} - ${currentYear}`;
+  document.getElementById("copyright").innerText = dateString;
+</script>

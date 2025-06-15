@@ -1,0 +1,60 @@
+// Primære farver
+$primary-bg: hsla(191, 96, 7, 1);
+$primary-text: #E0E0E0;
+$primary-accent: #FF8C00;
+
+// Sekundære farver (omvendt)
+$secondary-bg: #F8F8F8; // Lys baggrund
+$secondary-text: hsla(191, 96, 7, 1); // Mørk tekst
+$secondary-border: #E0E0E0; // Lys grænse
+
+// Bootstrap-farver (kan overskrives)
+$primary: $primary-accent;
+$secondary: #025E73;
+$success: #4CAF50;
+$info: #2196F3;
+$warning: $primary-accent;
+$danger: #F44336;
+$light: $secondary-bg; // Lys baggrund
+$dark: $secondary-text; // Mørk tekst
+
+// Brugerdefineret farve til links
+$link-color: $primary-accent;
+$link-hover-color: darken($primary-accent, 10%);
+
+// Brugerdefineret styling til sekundære elementer
+.bg-secondary {
+    background-color: $secondary-bg;
+    color: $secondary-text;
+    border-color: $secondary-border;
+}
+
+$navbar-toggler-icon-bg: orange;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Special+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+$font-family-base: "Noto Sans", serif;
+$font-size-base: 1rem;
+
+/* Color Theme Swatches in Hex */
+$Green-on-Green---Porsche-991-Speedster-1-hex: #025E73;
+$Green-on-Green---Porsche-991-Speedster-2-hex: #011F26;
+$Green-on-Green---Porsche-991-Speedster-3-hex: #A5A692;
+$Green-on-Green---Porsche-991-Speedster-4-hex: #BFB78F;
+$Green-on-Green---Porsche-991-Speedster-5-hex: #F2A71B;
+
+/* Color Theme Swatches in RGBA */
+$Green-on-Green---Porsche-991-Speedster-1-rgba: rgba(2,94,114, 1);
+$Green-on-Green---Porsche-991-Speedster-2-rgba: rgba(0,31,38, 1);
+$Green-on-Green---Porsche-991-Speedster-3-rgba: rgba(165,165,145, 1);
+$Green-on-Green---Porsche-991-Speedster-4-rgba: rgba(191,183,143, 1);
+$Green-on-Green---Porsche-991-Speedster-5-rgba: rgba(242,166,26, 1);
+
+/* Color Theme Swatches in HSLA */
+$Green-on-Green: hsla(191, 96, 22, 1);
+$Green-on-Green: hsla(191, 96, 7, 1);
+$Green-on-Green: hsla(61, 10, 61, 1);
+$Green-on-Green: hsla(50, 27, 65, 1);
+$Green-on-Green: hsla(39, 89, 52, 1);

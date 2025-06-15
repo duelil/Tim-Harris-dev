@@ -1,16 +1,17 @@
-$theme-colors: (
-    "primary": blue,
-    "dark": #000000
-);
+// Overriding Bootstrap 5 default variable values and defining your own
+@import "variables";
 
-@import "node_modules/bootstrap/scss/bootstrap";
+// Include the necessary SCSS sources Bootstrap 5
+@import "./node_modules/bootstrap/scss/bootstrap";
 
-body {
-    padding-top:56px;
-}
-.footer {
-    margin-top:3rem;
-}
-.navbar {
-    border-bottom:1px solid #eee;
-}
+//@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Utilities
+@import "node_modules/bootstrap/scss/utilities/_api.scss";
+//@import "../../node_modules/bootstrap/scss/utilities/api";
+
+
+// My styles
+@import "general";
+@import "index";
+@import "navigation";
